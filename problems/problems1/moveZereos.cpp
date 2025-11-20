@@ -1,0 +1,1 @@
+swap(nums[j],nums[i])
