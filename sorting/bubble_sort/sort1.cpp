@@ -1,22 +1,16 @@
-class Solution {
-public:
-    vector<int> sortArray(vector<int>& nums ) {
-        int n= nums.size();
-        bool swapped= false;
-        for(int i=1;i<n;i++){
-               for(int j=0;j<n-i;j++){
-                if(nums[j]>nums[j+1]){
-                      swap(nums[j],nums[j+1]);
-                      swapped =true;                   
-                }
-              
-            
+#include<iostream>// bubble sort 
+using namespace std;
+
+int main(){
+    int arr[6]={3,2,5,4,7,11};
+    for(int i=0;i<5;i++){
+        for(int j=0;j<5;j++){
+            if(arr[j]>arr[j+1]){
+                swap(arr[j],arr[j+1]);
             }
-            if(swapped== false){
-                break;
-            }
-            
         }
-        return nums;
     }
-};
+    for(int i=0;i<6;i++){
+        cout<<arr[i]<<"  ";
+    }
+}
