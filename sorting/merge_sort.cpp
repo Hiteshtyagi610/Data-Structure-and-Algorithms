@@ -32,6 +32,7 @@ void merge(int arr[],int s,int e,int mid){
     while(index2<len2){
         arr[mainindex++]=arr2[index2++];
     }
+    
 }
 
 void Sort(int *arr,int s,int e){
